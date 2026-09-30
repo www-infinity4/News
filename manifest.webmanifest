@@ -1,0 +1,19 @@
+{
+  "name": "News Phi",
+  "short_name": "News Phi",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#06040d",
+  "theme_color": "#080515",
+  "description": "A reusable feed of orange cards collected across Infinity Phi searches.",
+  "share_target": {
+    "action": "./?shareTarget=1",
+    "method": "GET",
+    "enctype": "application/x-www-form-urlencoded",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  }
+}
