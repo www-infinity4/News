@@ -159,7 +159,11 @@
     const quanta=get(KEYS.quantaCloud,[]);
     const controlShares=get(KEYS.controlShares,[]);
     const researchCards=Array.isArray(research?.sources)?research.sources:[];
-    const all=[...monitor,...quanta,...controlShares,...shared,...(profile.collected||[]),...researchCards].filter(isVisibleCard);
+    const freshMonitor=monitor.filter(isVisibleCard);
+    const supporting=[...quanta,...controlShares,...shared,...(profile.collected||[]),...researchCards].filter(isVisibleCard);
+    // Once Monitor has a fresh retrieval, make that retrieval the visible News desk.
+    // Supporting Phi cards remain seed/context data instead of keeping old headlines pinned forever.
+    const all=freshMonitor.length?freshMonitor:supporting;
     const merged=new Map();
 
     all.forEach(card=>{
