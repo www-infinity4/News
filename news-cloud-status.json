@@ -1,0 +1,6 @@
+{
+  "monitor": "monitor-phi",
+  "feed": "/p/news/feed",
+  "persistence": "D1",
+  "status": "connected"
+}
