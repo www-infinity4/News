@@ -5,7 +5,7 @@
   "display": "standalone",
   "background_color": "#06040d",
   "theme_color": "#080515",
-  "description": "A reusable feed of orange cards collected across Infinity Phi searches.",
+  "description": "A fresh source-backed news feed generated from Omni Phi, Infinity Phi, Quanta Phi, shares, collections, searches, and compatible Phi activity.",
   "share_target": {
     "action": "./?shareTarget=1",
     "method": "GET",
