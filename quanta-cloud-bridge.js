@@ -57,7 +57,7 @@
   }
 
   async function refresh(){
-    const bridge=window.StarQuestCloudLedger;
+    const bridge=window.QuantaCloudConnection||window.StarQuestCloudLedger;
     if(!bridge?.authenticatedFetch)return {ok:false,reason:'signed_out'};
     const response=await bridge.authenticatedFetch(ENDPOINT,{cache:'no-store'});
     const payload=await response.json().catch(()=>({}));
